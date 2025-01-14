@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Lecture161 Spring Boot/SpringBootLecture161/SpringBootLecture161/pom.xml" />
+        <option value="$PROJECT_DIR$/Lecture139 SpringProject/SprinFirstProject/pom.xml" />
+        <option value="$PROJECT_DIR$/Lecture166 Spring Boot JDBC/SpringBootJDBC/SpringBootJDBC/pom.xml" />
+        <option value="$PROJECT_DIR$/Lecture173 Spring Boot Web Apps/Servlet/pom.xml" />
+        <option value="$PROJECT_DIR$/Lecture152 Java Based Configuration/JavaBasedConfig/pom.xml" />
+        <option value="$PROJECT_DIR$/Lecture137 DependencyInjectionAndSpringBoot/demo/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/Lecture172 Spring Boot External Database Connection/SpringBootExternalJDBC/SpringBootExternalJDBC/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="19" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

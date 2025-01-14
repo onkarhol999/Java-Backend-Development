@@ -1,10 +1,10 @@
-package com.TomCat.webApplicationUsingSpringBootProject1;
+package com.example.SpringBootWebProject1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebApplicationUsingSpringBootProject1ApplicationTests {
+class SpringBootWebProject1ApplicationTests {
 
 	@Test
 	void contextLoads() {
