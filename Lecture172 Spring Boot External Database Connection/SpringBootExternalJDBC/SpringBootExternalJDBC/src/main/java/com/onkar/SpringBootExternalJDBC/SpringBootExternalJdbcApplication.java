@@ -15,9 +15,9 @@ public class SpringBootExternalJdbcApplication {
 		ApplicationContext context = SpringApplication.run(SpringBootExternalJdbcApplication.class, args);
 
 		Student s = context.getBean(Student.class);
-		s.setRollno(111);
-		s.setName("Onkar");
-		s.setMarks(89);
+		s.setRollno(114);
+		s.setName("Ramdev");
+		s.setMarks(81);
 
 		StudentService service = context.getBean(StudentService.class);
 		service.addStudent(s);
