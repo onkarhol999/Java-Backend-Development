@@ -12,6 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.InputStream;
 
 import java.util.List;
+import java.util.Random;
 
 @Service
 public class QuestionService {
@@ -62,5 +63,22 @@ public class QuestionService {
         }
 
         workbook.close();
+    }
+
+    private int currentIndex = 2;
+
+    public synchronized Question getQuestionOfTheDay() { // Synchronized to handle concurrent calls
+        List<Question> allQuestions = repo.findAll();
+        if (allQuestions.isEmpty()) {
+            return null; // No questions available
+        }
+
+        // Get the current question
+        Question question = allQuestions.get(currentIndex);
+
+        // Update index to the next question (loop back to 0 if at the end)
+        currentIndex = (currentIndex + 1) % allQuestions.size();
+
+        return question;
     }
 }
