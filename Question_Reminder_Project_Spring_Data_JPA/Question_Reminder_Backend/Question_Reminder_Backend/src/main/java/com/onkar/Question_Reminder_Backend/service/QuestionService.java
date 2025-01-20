@@ -65,7 +65,7 @@ public class QuestionService {
         workbook.close();
     }
 
-    private int currentIndex = 2;
+    private int currentIndex = 4;
 
     public synchronized Question getQuestionOfTheDay() { // Synchronized to handle concurrent calls
         List<Question> allQuestions = repo.findAll();

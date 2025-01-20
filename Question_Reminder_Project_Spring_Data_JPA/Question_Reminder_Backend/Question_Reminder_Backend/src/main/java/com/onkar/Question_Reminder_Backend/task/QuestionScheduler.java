@@ -16,7 +16,7 @@ public class QuestionScheduler {
     private SendQuestionToGmail sendQue;
 
     // Scheduled to run every day at midnight
-    @Scheduled(cron = "0 00 9 * * ?")
+    @Scheduled(cron = "0 28 14 * * ?")
     public void printQuestionOfTheDay() {
         Question question = questionService.getQuestionOfTheDay();
         if (question != null) {
