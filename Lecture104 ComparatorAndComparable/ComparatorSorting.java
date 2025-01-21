@@ -13,6 +13,19 @@ public class ComparatorSorting {
         list.add(94);
         list.add(95);
 
+        // Comparator<Integer> com = new Comparator<Integer>() {
+        // public int compare(Integer i, Integer j) {
+        // if (i % 10 > j % 10) {
+        // return 1;
+        // } else {
+        // return -1;
+        // }
+        // }
+        // };
+
+        // Collections.sort(list, com);
+        // System.out.println(list);
+
         Comparator<Integer> com = new Comparator<Integer>() {
             public int compare(Integer i, Integer j) {
                 if (i % 10 > j % 10) {

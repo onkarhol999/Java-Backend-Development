@@ -7,7 +7,6 @@ public class Company {
             try {
                 wait();
             } catch (Exception e) {
-                // TODO: handle exception
             }
         }
         this.n = n;
@@ -21,7 +20,6 @@ public class Company {
             try {
                 wait();
             } catch (Exception e) {
-                // TODO: handle exception
             }
         }
         System.out.println("Consumed : " + this.n);
