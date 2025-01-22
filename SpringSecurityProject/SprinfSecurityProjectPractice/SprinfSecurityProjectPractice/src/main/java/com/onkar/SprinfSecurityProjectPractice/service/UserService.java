@@ -1,12 +1,14 @@
-package com.onkar.SpringDataJPAInJobPortal.service;
+package com.onkar.SprinfSecurityProjectPractice.service;
 
 
 
-import com.onkar.SpringDataJPAInJobPortal.model.User;
-import com.onkar.SpringDataJPAInJobPortal.repo.UserRepo;
+import com.onkar.SprinfSecurityProjectPractice.model.User;
+import com.onkar.SprinfSecurityProjectPractice.repo.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class UserService {
@@ -21,6 +23,7 @@ public class UserService {
         return repo.save(user);
     }
 
-
-
+    public List<User> getAllUsers() {
+        return repo.findAll();
+    }
 }

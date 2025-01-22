@@ -9,11 +9,11 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String greating(HttpServletRequest request){
-        return "Hello......" + request.getSession().getId();
+        return "Hello......";
     }
 
     @GetMapping("/about")
     public String about(HttpServletRequest request){
-        return "Onkar Hol......" + request.getSession().getId();
+        return "Onkar Hol......" ;
     }
 }
